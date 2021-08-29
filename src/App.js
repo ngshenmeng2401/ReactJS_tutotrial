@@ -4,7 +4,7 @@ import profileImg from './img/profile.png';
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,12 +17,12 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header>
 
-      <h1>Demo app</h1>
+      {/* <h1>Demo app</h1>
       <h2>Meng</h2>
       <h3>HIII</h3>
-      <img src={profileImg} alt="profile" />
+      <img src={profileImg} alt="profile" /> */}
     </div>
   );
 }
