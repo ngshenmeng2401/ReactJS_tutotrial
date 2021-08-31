@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import Title4 from './component/4th_tutorial/Title4';
 import TodoList from './component/5th_tutorial/TodoList';
 import Demo6 from './component/6th_tutorial/Demo6';
+import TodoListRedux from './component/Redux1/TodoListRedux';
 
 class App extends Component {
 
@@ -54,7 +55,9 @@ class App extends Component {
     return (
       <div >
 
-        <Demo6/>
+        <TodoListRedux />
+
+        {/* <Demo6/> */}
 
         {/* <TodoList /> */}
 
