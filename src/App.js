@@ -10,34 +10,35 @@ import Title3 from './component/3rd_tutorial/Title3';
 import Button4 from './component/4th_tutorial/Demo4';
 import PropTypes from 'prop-types';
 import Title4 from './component/4th_tutorial/Title4';
-
+import TodoList from './component/5th_tutorial/TodoList';
+import Demo6 from './component/6th_tutorial/Demo6';
 
 class App extends Component {
 
-  static childContextTypes = {
-    themeColor: PropTypes.string,
-    handleChangeColor : PropTypes.func,
-  }
+  // static childContextTypes = {
+  //   themeColor: PropTypes.string,
+  //   handleChangeColor : PropTypes.func,
+  // }
 
-  handleChangeColor (color){
-    this.setState({
-      themeColor: color,
-    })
-  }
+  // handleChangeColor (color){
+  //   this.setState({
+  //     themeColor: color,
+  //   })
+  // }
 
-  getChildContext(){
-    return {
-      // title:"Big Title",
-      themeColor : this.state.themeColor,
-      handleChangeColor : (color) =>this.handleChangeColor(color),
-    }
-  }
+  // getChildContext(){
+  //   return {
+  //     // title:"Big Title",
+  //     themeColor : this.state.themeColor,
+  //     handleChangeColor : (color) =>this.handleChangeColor(color),
+  //   }
+  // }
 
   constructor(props) {
     super(props)
   
     this.state = {
-       themeColor:'',
+      //  themeColor:'',
       //  isRenderTest: true,
     }
   }
@@ -53,8 +54,12 @@ class App extends Component {
     return (
       <div >
 
-        <Title4></Title4>
-        <Button4></Button4>
+        <Demo6/>
+
+        {/* <TodoList /> */}
+
+        {/* <Title4></Title4>
+        <Button4></Button4> */}
 
         {/* <Title3></Title3> */}
 
