@@ -32,6 +32,5 @@ export default (state = defaultState,actions) =>{
         return newState;
     }
 
-    // console.log(state,actions);
     return state;
 }

@@ -13,6 +13,9 @@ import Title4 from './component/4th_tutorial/Title4';
 import TodoList from './component/5th_tutorial/TodoList';
 import Demo6 from './component/6th_tutorial/Demo6';
 import TodoListRedux from './component/Redux1/TodoListRedux';
+import TodoListRedux2 from './component/Redux2.js/TodoListRedux2';
+import { Provider } from 'react-redux';
+import store from '../src/component/store/store1';
 
 class App extends Component {
 
@@ -55,7 +58,9 @@ class App extends Component {
     return (
       <div >
 
-        <TodoListRedux />
+        <Provider store={store}>
+          <TodoListRedux2 />
+        </Provider>
 
         {/* <Demo6/> */}
 
