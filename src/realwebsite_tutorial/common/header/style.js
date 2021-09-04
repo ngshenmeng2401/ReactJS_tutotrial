@@ -139,11 +139,28 @@ export const SearchInfoTitle = styled.div`
     line-height: 20px;
     font-size: 14px;
     color: #787878;
+    cursor: pointer;
+
+    .refreshIcon{
+        position: absolute;
+        top: 7%;
+        right: 22%;
+        float: right;
+    }
+
+    .mouseIn{
+        color: lightblue;
+    }
 `;
 
 export const SearchInfoSwitch = styled.span`
     float: right;
     font-size: 13px;
+    cursor: pointer;
+
+    &.mouseIn{
+        color: lightblue;
+    }
 `;
 
 export const SearchItemlist = styled.div`

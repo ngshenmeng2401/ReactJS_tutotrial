@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import profileImg from './img/profile.png';
-import Title1 from './component/1st_tutorial/Title1';
-import Button1 from './component/1st_tutorial/Button1';
 import React, { Component } from 'react'
-import Test from './component/2nd_tutorial/Test';
-import Test2 from './component/2nd_tutorial/Test2';
-import Title3 from './component/3rd_tutorial/Title3';
-import Button4 from './component/4th_tutorial/Demo4';
-import PropTypes from 'prop-types';
-import Title4 from './component/4th_tutorial/Title4';
-import TodoList from './component/5th_tutorial/TodoList';
-import Demo6 from './component/6th_tutorial/Demo6';
-import TodoListRedux from './component/Redux1/TodoListRedux';
-import TodoListRedux2 from './component/Redux2/TodoListRedux2';
+import './App.css';
 import { Provider } from 'react-redux';
 import { GlobalStyle } from './style';
-import Header from './realwebsite_tutorial/comment/header/Header';
+import Header from './realwebsite_tutorial/common/header/Header';
 import store from './realwebsite_tutorial/store/index';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import HomePage from './realwebsite_tutorial/pages/home/HomePage';
+import DetailsPage from './realwebsite_tutorial/pages/detail/DetailsPage';
 
 class App extends Component {
 
@@ -63,6 +52,12 @@ class App extends Component {
         <GlobalStyle />
         <Provider store={store}>
           <Header />
+            <BrowserRouter>
+              <div>
+                <Route path='/' exact component={HomePage}></Route>
+                <Route path='/detail' exact component={DetailsPage}></Route>
+              </div>
+            </BrowserRouter>
         </Provider>
         
 

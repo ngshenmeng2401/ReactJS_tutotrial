@@ -1,0 +1,23 @@
+export const category = [
+    "Action and Adventure",
+    "Biography",
+    "Business",
+    "Classics",
+    "Cookbook",
+    "Detective and Mystery",
+    "Diary",
+    "Education",
+    "Fantasy",
+    "Financial",
+    "Health",
+    "Historical Fiction",
+    "Literary Fiction",
+    "Philosophy",
+    "Review",
+    "Romance",
+    "Science",
+    "Sports",
+    "Suspense and Thrillers",
+    "Travel",
+
+]
